@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Converter1ClicMP3",
+  "version": "1.0",
+  "description": "Convierte vídeos de YouTube a MP3 con un clic derecho",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "notifications",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "1ClicMP3"
+  }
+}
